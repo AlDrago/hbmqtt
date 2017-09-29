@@ -459,7 +459,7 @@ class MQTTClient:
                 cancel_tasks(self)
         else:
             # Cancel client pending tasks
-            cancel_tasks()
+            cancel_tasks(self)
 
     def _initsession(
             self,
